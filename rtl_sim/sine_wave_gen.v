@@ -268,7 +268,7 @@ module sine_wave_gen(Clk,data_out);
 		sine[	255	]<=124;
     end
     
-    //At every positive edge of the clock, output a sine wave sample.
+    //At every rising edge of the clock, output a sine wave sample.
     always@ (posedge(Clk))
     begin
         data_out = sine[i];
